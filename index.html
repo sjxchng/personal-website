@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siwoo Chung — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="veil"><span>ascending</span></div>
+<canvas id="scene-canvas"></canvas>
+<div id="text-scrim"></div>
+
+<div class="hud" id="hud-elev">ELEV<span class="num" id="elev-val">800 FT</span></div>
+<div class="hud" id="hud-camp">CAMP<span class="name" id="camp-val">Trailhead</span></div>
+
+<main>
+
+  <section class="camp" id="camp-0" data-elev="111" data-name="Trailhead">
+    <p class="eyebrow">Trailhead</p>
+    <h1 class="hero-name">Siwoo Chung</h1>
+    <p class="hero-role">EECS @ UC Berkeley College of Engineering</p>
+    <div class="scroll-cue">Scroll to ascend ↓</div>
+  </section>
+
+  <section class="camp" id="camp-1" data-elev="581" data-name="Camp I">
+    <p class="eyebrow">Camp I</p>
+    <h2 class="camp-title">Education</h2>
+    <div class="entries">
+      <div class="entry education-entry">
+        <img class="education-logo" src="images/logos/berkeley-logo.png" alt="UC Berkeley logo">
+        <div class="role">University of California, Berkeley</div>
+        <div class="org">B.S. in Electrical Engineering and Computer Sciences · May 2028</div>
+        <div class="gpa-line education-gpa">GPA: 3.82/4.00</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="camp coursework-section" id="camp-coursework" data-elev="774" data-name="Camp II">
+    <p class="eyebrow">Camp II</p>
+    <h2 class="camp-title">Coursework</h2>
+    <div class="entries course-grid">
+      <div class="course-card">
+        <span class="course-area">Algorithms</span>
+        <div class="course-name">Data Structures & Algorithms</div>
+      </div>
+      <div class="course-card">
+        <span class="course-area">Systems</span>
+        <div class="course-name">Computer Architecture & Machine Structures</div>
+      </div>
+      <div class="course-card">
+        <span class="course-area">Networks</span>
+        <div class="course-name">Internet Architecture & Networking Protocols</div>
+      </div>
+      <div class="course-card">
+        <span class="course-area">Theory</span>
+        <div class="course-name">Discrete Mathematics & Probability</div>
+      </div>
+      <div class="course-card">
+        <span class="course-area">AI / ML</span>
+        <div class="course-name">Machine Learning</div>
+      </div>
+      <div class="course-card">
+        <span class="course-area">Security</span>
+        <div class="course-name">Computer Security</div>
+      </div>
+      <div class="course-card">
+        <span class="course-area">Math</span>
+        <div class="course-name">Linear Algebra & Differential Equations, Calculus III</div>
+      </div>
+      <div class="course-card">
+        <span class="course-area">Electrical Engineering</span>
+        <div class="course-name">Signals, Systems, & Information, Circuits & Devices</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="camp skills-section" id="camp-skills" data-elev="968" data-name="Camp III">
+    <p class="eyebrow">Camp III</p>
+    <h2 class="camp-title">Skills</h2>
+    <div class="entries skills-grid">
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/python/d9bd82" alt="Python logo"><span>Python</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/openjdk/d9bd82" alt="Java logo"><span>Java</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/c/d9bd82" alt="C logo"><span>C</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/cplusplus/d9bd82" alt="C++ logo"><span>C++</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/javascript/d9bd82" alt="JavaScript logo"><span>JavaScript</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/typescript/d9bd82" alt="TypeScript logo"><span>TypeScript</span></div>
+      <div class="skill-card">
+        <svg class="skill-symbol" viewBox="0 0 40 40" role="img" aria-label="Database symbol">
+          <ellipse cx="20" cy="9" rx="12" ry="5"></ellipse>
+          <path d="M8 9v15c0 2.8 5.4 5 12 5s12-2.2 12-5V9"></path>
+          <path d="M8 16c0 2.8 5.4 5 12 5s12-2.2 12-5"></path>
+          <path d="M8 23c0 2.8 5.4 5 12 5s12-2.2 12-5"></path>
+        </svg>
+        <span>SQL</span>
+      </div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" alt="MATLAB logo"><span>MATLAB</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/riscv/d9bd82" alt="RISC-V logo"><span>RISC-V</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/react/d9bd82" alt="React logo"><span>React</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/nextdotjs/d9bd82" alt="Next.js logo"><span>Next.js</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/nodedotjs/d9bd82" alt="Node.js logo"><span>Node.js</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/express/d9bd82" alt="Express logo"><span>Express</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/nestjs/d9bd82" alt="NestJS logo"><span>NestJS</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/fastapi/d9bd82" alt="FastAPI logo"><span>FastAPI</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/flask/d9bd82" alt="Flask logo"><span>Flask</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/prisma/d9bd82" alt="Prisma logo"><span>Prisma</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/langgraph/d9bd82" alt="LangGraph logo"><span>LangGraph</span></div>
+      <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS logo"><span>AWS</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/postgresql/d9bd82" alt="PostgreSQL logo"><span>PostgreSQL</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/redis/d9bd82" alt="Redis logo"><span>Redis</span></div>
+      <div class="skill-card"><img class="skill-logo-pinecone" src="https://cdn.jsdelivr.net/gh/callback-io/allogo@main/public/logos/pinecone/icon.svg" alt="Pinecone logo"><span>Pinecone</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/git/d9bd82" alt="Git logo"><span>Git</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/github/d9bd82" alt="GitHub logo"><span>GitHub</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/docker/d9bd82" alt="Docker logo"><span>Docker</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/githubactions/d9bd82" alt="GitHub Actions logo"><span>CI/CD</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/linux/d9bd82" alt="Linux logo"><span>Linux</span></div>
+      <div class="skill-card"><img src="https://cdn.simpleicons.org/openapiinitiative/d9bd82" alt="OpenAPI logo"><span>REST APIs</span></div>
+    </div>
+  </section>
+
+  <section class="camp guide-section" id="camp-guide" data-elev="1079" data-name="Guide">
+    <div class="guide-copy">
+      <div class="guide-title">Click on my <span>experience, projects, and activities</span> to take a closer look </div>
+    </div>
+    <div class="scroll-cue">Scroll to ascend ↓</div>
+  </section>
+
+  <section class="camp" id="camp-2" data-elev="1189" data-name="Camp IV">
+    <p class="eyebrow">Camp IV</p>
+    <h2 class="camp-title">Experience</h2>
+    <div class="entries">
+      <div class="entry card" data-story="magnus" tabindex="0">
+        <div class="entry-head">
+          <img class="logo thumb visual-mark" src="images/logos/magnus-logo.png" alt="Magnus Investment Partners logo">
+          <div>
+            <div class="role">AI Software Engineering Intern</div>
+            <div class="org meta-line"><span>Magnus Investment Partners</span><span>May 2026 - Present</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="entry card" data-story="ucsf" tabindex="0">
+        <div class="entry-head">
+          <img class="logo thumb visual-mark" src="images/logos/ucsf-logo.png" alt="LIN Lab, UCSF logo">
+          <div>
+            <div class="role">Full Stack Developer Intern, LIN Lab</div>
+            <div class="org meta-line"><span>LIN Lab, University of California, San Francisco</span><span>June 2026 - Present</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="entry card" data-story="mathworks" tabindex="0">
+        <div class="entry-head">
+          <img class="logo thumb visual-mark" src="images/logos/mathworks-logo.png" alt="MathWorks logo">
+          <div>
+            <div class="role">ML Project Intern</div>
+            <div class="org meta-line"><span>MathWorks</span><span>Jun 2025 - Aug 2025</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="camp" id="camp-3" data-elev="1632" data-name="Camp V">
+    <p class="eyebrow">Camp V</p>
+    <h2 class="camp-title">Projects</h2>
+    <div class="entries">
+      <div class="entry card" data-story="personal-website" tabindex="0">
+        <div class="role">Personal Website</div>
+        <div class="phrase">Interactive 3D portfolio built as this site</div>
+        <div class="stack">Three.js · JavaScript · CSS</div>
+      </div>
+      <div class="entry card" data-story="drumvoice" tabindex="0">
+        <div class="role">DrumVoice</div>
+        <div class="phrase">Voice-controlled practice tool for drummers</div>
+        <div class="stack">Node.js · Express · PDF.js</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="camp" id="camp-4" data-elev="1853" data-name="Camp VI">
+    <p class="eyebrow">Camp VI</p>
+    <h2 class="camp-title">Beyond the<br>summit</h2>
+    <div class="entries">
+      <div class="entry card" data-story="yhwh" tabindex="0">
+        <div class="entry-head">
+          <div class="logo thumb visual-mark slide-logo" aria-label="YHWH Apparel media">
+            <img src="images/logos/yhwh-logo.jpg" alt="YHWH Apparel logo">
+          </div>
+          <div>
+            <div class="role">YHWH Apparel</div>
+            <div class="org">Web Developer</div>
+          </div>
+        </div>
+      </div>
+      <div class="entry card" data-story="hkn" tabindex="0">
+        <div class="entry-head">
+          <div class="logo thumb visual-mark slide-logo" aria-label="Eta Kappa Nu media">
+            <img src="images/logos/hkn-logo.png" alt="Eta Kappa Nu logo">
+          </div>
+          <div>
+            <div class="role">Eta Kappa Nu</div>
+            <div class="org">Computing Services Officer</div>
+          </div>
+        </div>
+      </div>
+      <div class="entry card" data-story="taug" tabindex="0">
+        <div class="entry-head">
+          <div class="logo thumb visual-mark slide-logo" aria-label="TAUG Journal media">
+            <img src="images/logos/taug-logo.jpg" alt="TAUG Journal logo">
+          </div>
+          <div>
+            <div class="role">TAUG Journal</div>
+            <div class="org">Web Developer</div>
+          </div>
+        </div>
+      </div>
+      <div class="entry card" data-story="music" tabindex="0">
+        <div class="entry-head">
+          <div class="logo thumb visual-mark slide-logo" aria-label="Musical Activities media">
+            <img src="images/logos/music-logo.jpg" alt="UC Berkeley Symphony Orchestra logo">
+            <img src="images/logos/fcs-logo.png" alt="FCS A Cappella logo">
+          </div>
+          <div>
+            <div class="role">Musical Activities</div>
+            <div class="org"> Orchestra · Drums · A Cappella</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="camp" id="camp-5" data-elev="2006" data-name="Summit">
+    <p class="eyebrow">Summit</p>
+    <h2 class="camp-title">Let's talk</h2>
+    <div class="contact-links">
+      <a href="mailto:siwoochung@berkeley.edu"><span class="k">Email</span>siwoochung@berkeley.edu</a>
+      <a href="https://linkedin.com/in/siwoochung" target="_blank" rel="noopener"><span class="k">LinkedIn</span>in/siwoochung</a>
+      <a href="https://github.com/sjxchng" target="_blank" rel="noopener"><span class="k">GitHub</span>sjxchng</a>
+    </div>
+    <footer>2,006 FT</footer>
+  </section>
+
+</main>
+
+<div id="veil2"></div>
+<div id="destination-page">
+  <p class="dest-eyebrow" id="dest-eyebrow">Arriving</p>
+  <div id="dest-content"></div>
+  <div class="dest-hint" id="dest-hint">
+    <svg viewBox="0 0 200 200">
+      <defs><path id="hint-circle-path" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0" /></defs>
+      <text>
+        <textPath href="#hint-circle-path" startOffset="0%">click to return  &#8226;  click to return  &#8226;  </textPath>
+      </text>
+    </svg>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
