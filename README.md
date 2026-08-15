@@ -1,5 +1,9 @@
 # My Personal Website
 
+## Live Site
+
+[personal-website-five-tau-53.vercel.app](https://personal-website-five-tau-53.vercel.app/)
+
 This is an interactive portfolio site I built for myself with a cinematic 3D mountain journey. It combines a static HTML/CSS content layer with a Three.js scene, scroll-driven camera movement, a firefly guide, and clickable detail views for experience, projects, and activities.
 
 ## Features
