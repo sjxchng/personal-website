@@ -587,7 +587,9 @@
       org:'LIN Lab, UCSF · San Francisco, CA · June 2026 - Present',
       desc:'Developing a NestJS/PostgreSQL platform with two Next.js clients, Dockerized local development, environment-selectable local and S3 audio storage, and hardened authentication and database seeding.',
       tags:['NestJS','PostgreSQL','Next.js','Docker','AWS S3'],
-      links:[],
+      links:[
+        { label:'Website', url:'https://linlab.ucsf.edu/' }
+      ],
       pos:new THREE.Vector3(-46, 58, -72),
       look:new THREE.Vector3(-18, 66, -160)
     },
