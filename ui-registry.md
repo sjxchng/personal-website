@@ -94,3 +94,22 @@ Last updated: 2026-08-15
 **Pattern notes:**
 Story data keeps `logos` for main-page card thumbnails only and `photos` for clicked destination pages. Destination pages do not render logo slideshow boxes. Single experience logos render as a small `dest-logo-image` aligned with the detail text; photo stories show one photo media area only. Project photos go in `images/photos/projects/<project>/`; activity photos go in `images/photos/activities/<activity>/`. A single contained project screenshot still uses `dest-full-image` with no frame; multiple project/activity photos use one large `dest-media-slider` with a slow continuous marquee track that duplicates the image sequence so the right edge of one photo connects to the left edge of the next. Main-page card dimensions do not change. Musical Activities main-page logo thumbnail rotates UCB Symphony and FCS faster than destination photos.
 
+### Destination Return Note
+
+File: js/app.js / css/styles.css
+Last updated: 2026-08-15
+
+| Property         | Class / Value |
+| ---------------- | ------------- |
+| Background       | none |
+| Border           | none |
+| Border radius    | none |
+| Text - primary   | `rgba(238,242,246,0.52)`, JetBrains Mono, 10.5px uppercase |
+| Text - secondary | none |
+| Spacing          | `22px` top margin |
+| Hover state      | none |
+| Shadow           | none |
+| Accent usage     | Muted instructional text stays below the story links |
+
+**Pattern notes:**
+Destination overlays should keep the firefly as the return control. Use `.dest-return-note` as a quiet bottom instruction instead of adding a visible return button, so the detail view preserves the cinematic feel while making the mobile behavior discoverable.

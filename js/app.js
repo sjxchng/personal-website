@@ -848,7 +848,8 @@
       '<div class="dest-org">'+d.org+'</div>' +
       '<div class="dest-desc">'+d.desc+'</div>' +
       '<div class="dest-tags">'+d.tags.join(' · ')+'</div>' +
-      (linksHTML ? '<div class="dest-links">'+linksHTML+'</div>' : '');
+      (linksHTML ? '<div class="dest-links">'+linksHTML+'</div>' : '') +
+      '<div class="dest-return-note">Click the light to return</div>';
 
     var cfWrap = document.getElementById('dest-cf-wrap');
     if(cfWrap) setupCoverflow(cfWrap);
