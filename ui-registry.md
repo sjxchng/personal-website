@@ -21,7 +21,7 @@ Portfolio entries should feel like quiet expedition markers rather than heavy pa
 ### Trailhead And Guide
 
 File: index.html
-Last updated: 2026-08-14
+Last updated: 2026-08-16
 
 | Property         | Class / Value |
 | ---------------- | ------------- |
@@ -30,13 +30,13 @@ Last updated: 2026-08-14
 | Border radius    | none for opening identity |
 | Text - primary   | Opening: `Siwoo Chung`; guide: `Click on my experience, projects, and activities to take a closer look.` |
 | Text - secondary | Opening: `Berkeley Engineering` |
-| Spacing          | Trailhead opening followed by long guide section before Education |
+| Spacing          | Trailhead opening followed by long guide section before Experience |
 | Hover state      | none |
 | Shadow           | none |
 | Accent usage     | Firefly provides the guiding accent; highlighted guide phrase uses `--accent` |
 
 **Pattern notes:**
-The site starts with a normal opening identity section over the trailhead nature scene, then moves into the firefly guide beat before Education. Do not reintroduce the wooden signpost for the name/school; use regular HTML text: `Siwoo Chung` and `Berkeley Engineering`. Avoid the old firefly glitch: the firefly must start off-screen right, ease in slowly with its own timer, and not switch to the normal path until scrolling begins. Trailhead grass should use a deliberately dense instanced blade field, with high uniform coverage plus natural jitter/clumping so the ground reads as continuous dark grass, not sparse strokes. Current grass baseline is roughly `1020 x 680` instanced blades with taller, wider blades for a thicker foreground field. Mountains should be generated as closed heightfield terrain with all four edges tapering down naturally, sloped perimeter closure, and no hollow visible underside. Click-through firefly routes should use terrain-aware flyover curves with clearance above sampled mountain height so project and experience transitions never pass under ridge geometry. The summit contact section should cap the 3D camera near `VISUAL_SCROLL_MAX = 0.91` and use a `100vh` final section so the final view lands around the starry mountain composition rather than drifting into empty sky.
+The site starts with a normal opening identity section over the trailhead nature scene, then moves into the firefly guide beat before the clickable portfolio sections. Keep the guide directly after the intro so visitors learn the firefly/card interaction before Experience, Projects, and Activities appear. Do not reintroduce the wooden signpost for the name/school; use regular HTML text: `Siwoo Chung` and `B.S. EECS @ UC Berkeley`. Avoid the old firefly glitch: the firefly must start off-screen right, ease in slowly with its own timer, and not switch to the normal path until scrolling begins. Trailhead grass should use a deliberately dense instanced blade field, with high uniform coverage plus natural jitter/clumping so the ground reads as continuous dark grass, not sparse strokes. Current grass baseline is roughly `1020 x 680` instanced blades with taller, wider blades for a thicker foreground field. Mountains should be generated as closed heightfield terrain with all four edges tapering down naturally, sloped perimeter closure, and no hollow visible underside. Click-through firefly routes should use terrain-aware flyover curves with clearance above sampled mountain height so project and experience transitions never pass under ridge geometry. The summit contact section should cap the 3D camera near `VISUAL_SCROLL_MAX = 0.91` and use a `100vh` final section so the final view lands around the starry mountain composition rather than drifting into empty sky.
 
 ### Coursework And Skills Sections
 
